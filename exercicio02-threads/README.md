@@ -1,0 +1,1 @@
+Faça um programa que imprima o nome de 5 frutas, mostrando repetidamente o nome de cada uma pelo tempo de pelo menos 3 segundos. São 5 threads e cada thread deverá imprimir o nome de uma fruta diferente.

@@ -1,0 +1,1 @@
+Faça uma classe que roda uma thread que conte de 1 a 100. Ao final, imprima a mensagem “Programa finalizado” fora da thread.
