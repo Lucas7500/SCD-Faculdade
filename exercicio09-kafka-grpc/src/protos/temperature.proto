@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package temperature;
+
+service TemperatureService {
+  rpc GetLatestTemperature (Empty) returns (TemperatureData);
+  rpc GetHistoricalData (Empty) returns (TemperatureHistory);
+}
+
+message Empty {}
+
+message TemperatureData {
+  float value = 1;
+  string timestamp = 2;
+  string type = 3; // "raw" or "average"
+}
+
+message TemperatureHistory {
+  repeated TemperatureData readings = 1;
+}
